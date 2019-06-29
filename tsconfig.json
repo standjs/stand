@@ -1,0 +1,19 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es2017",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "outDir": "./libs",
+    "rootDir": "./src",
+    "removeComments": true,
+    "noImplicitAny": true,
+    "alwaysStrict": true,
+    "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */,
+    "emitDecoratorMetadata": true /* Enables experimental support for emitting type metadata for decorators. */
+  },
+  "exclude": ["node_modules", "lib"],
+  "include": ["./src/**/*.ts"]
+}

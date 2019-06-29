@@ -1,0 +1,31 @@
+{
+  "name": "stand",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run build:watch\" \"npm run server:watch\"",
+    "build:watch": "tsc --watch",
+    "server:watch": "nodemon --watch libs libs/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/standjs/stand.git"
+  },
+  "author": "toBeTheLight",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/standjs/stand/issues"
+  },
+  "homepage": "https://github.com/standjs/stand#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1",
+    "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "@types/koa": "^2.0.48",
+    "@types/node": "^12.0.10",
+    "koa": "^2.7.0"
+  }
+}
