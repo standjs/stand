@@ -1,0 +1,25 @@
+{
+  "name": "stand",
+  "version": "1.0.0",
+  "description": "``` 木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大木大 ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/standjs/stand.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/standjs/stand/issues"
+  },
+  "homepage": "https://github.com/standjs/stand#readme",
+  "dependencies": {
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.2",
+    "webpack": "^4.35.0",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
