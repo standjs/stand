@@ -1,7 +1,6 @@
 import *  as Koa from 'koa'
 import registerTo from './middleware'
-
-import { Application } from 'koa'
+import KoaApp from 'koa'
 
 interface Server {
   // new(name: string, port: string): void
@@ -22,17 +21,17 @@ class ServerCore implements Server {
   }
 
   start(options: any) {
-    const app: Koa = new Application()
+    const app: any = new KoaApp()
 
     const middlewareOptions = this.getMiddlewareOptions(options)
 
     registerTo(app, middlewareOptions)
 
-    app.listen(this.port, () => {
+    app.listen(this.port, (ctx: Koa.Context) => {
       console.log('server has been open ')
     })
 
-    app.on('error', (error: any, ctx: Koa.Context) => {
+    app.on('error', (error: never, ctx: Koa.Context) => {
       console.log(error)
     })
   }

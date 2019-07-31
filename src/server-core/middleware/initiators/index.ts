@@ -8,7 +8,6 @@ function register(koaApp: Koa): void {
 
   async function initiate(ctx: Koa.Context, next: any) {
     task.forEach(item => item(ctx))
-
     console.log('请求开始了')
 
     return next()

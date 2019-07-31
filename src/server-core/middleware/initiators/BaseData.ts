@@ -1,7 +1,7 @@
 import * as Koa from 'koa'
 
 interface initiate {
-  (ctx: Koa.Context, error): void
+  (ctx: Koa.Context, error: never): void
 }
 
 
