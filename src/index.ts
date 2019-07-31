@@ -1,16 +1,5 @@
-import Koa, { Context } from 'koa'
-import Router from 'koa-router'
+import ServerCore from './server-core'
 
-const app = new Koa()
-const router = new Router()
+const server = new ServerCore('jack', '8000')
 
-router.get('/', (ctx: Context, next) => {
-  ctx.response.type = 'text/html'
-  ctx.response.body = '<div>lalala</div>'
-})
-
-app.use(router.routes())
-
-app.listen('3000', () => {
-  console.log('server has start')
-})
+server.start({})

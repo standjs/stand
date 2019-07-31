@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rif dist && tsc",
-    "dev": "tsc --watch"
+    "build": "rm -rif dist && tsc"
   },
   "repository": {
     "type": "git",
@@ -27,5 +26,8 @@
     "koa-router": "^7.4.0",
     "tsc": "^1.20150623.0",
     "typescript": "^3.5.2"
+  },
+  "devDependencies": {
+    "ts-node": "^8.3.0"
   }
 }
