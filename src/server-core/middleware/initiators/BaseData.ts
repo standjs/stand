@@ -4,7 +4,6 @@ interface initiate {
   (ctx: Koa.Context, error: never): void
 }
 
-
 const initiate: initiate = function (ctx, error) {
   const url: URL = ctx.request.URL
   ctx.stand = {
